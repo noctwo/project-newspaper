@@ -1,0 +1,147 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    max-width: 100%;
+}
+
+@font-face {
+    font-family: "Cormorant-Regular";
+    src: url(../fonts/CormorantGaramond-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Cormorant-Bold";
+    src: url(../fonts/CormorantGaramond-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Cormorant-Italic";
+    src: url(../fonts/CormorantGaramond-Italic.ttf);
+}
+
+body{
+    font-family: "Cormorant-Regular";
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo{
+    font-size: 2rem;
+    margin: 0.5em 0;
+}
+
+.date{
+    display: flex;
+    width: 100%;
+    padding: 0.5em 4em;
+    justify-content: space-between;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    text-transform: uppercase;
+}
+
+header, main{
+    max-width: 1190px;
+    margin: 0 auto;
+    background-color: #E9E9E0;
+    padding: 0 1em;
+}
+
+.news-wrapper{
+    height: 75vh;
+    display: grid;
+    gap: 0.5em;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+}
+
+h1{
+    font-family:  "Cormorant-Bold";
+    font-size: 2.5rem;
+}
+
+.col-4{
+    grid-column: span 4;
+}
+
+.headline, .adds-caption{
+    text-align: center;
+    align-content: center;
+}
+
+.news-image{
+    grid-column: 3 / 5;
+    grid-row: 2 / 7;
+}
+
+.adds{
+    text-align: center;
+    align-content: center;
+    border: 3px solid black;
+    padding: 0.5em;
+}
+
+.adds-caption{
+    grid-column: 5;
+    grid-row: 1;
+    
+}
+
+.add-empty{
+    grid-column: 5;
+    grid-row: 2 / 4;
+}
+
+.add-empty h3{
+    font-size: 4rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-family:"Cormorant-Bold";
+}
+
+.add-filled{
+    grid-column: 5;
+    grid-row: 4 / 6;
+}
+
+.news-text-left-one{
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.news-text-left-two{
+    grid-column: 1;
+    grid-row: 3 / 5;
+}
+
+.news-text-left-three{
+    grid-column: 1;
+    grid-row: 5 / 8;
+}
+
+.news-text-right-one{
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.news-text-right-two{
+    grid-column: 2;
+    grid-row: 3 / 5;
+}
+
+.news-text-right-three{
+    grid-column: 2;
+    grid-row: 5 / 8;
+}
+
+.image-caption{
+    font-family: "Cormorant-Italic";
+}
